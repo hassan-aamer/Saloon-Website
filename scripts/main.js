@@ -26,11 +26,3 @@ let header = document.querySelector("header");
 window.addEventListener("scroll", () => {
     header.classList.toggle("shadow", window.scrollY > 0);
 });
-
-//Loader
-onload = () =>{
-    const load = document.getElementById('loader');
-    setTimeout(() => {
-        load.style.display = "none";
-    },2500);
-}
