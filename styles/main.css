@@ -19,6 +19,11 @@
     scroll-padding-top: 3rem;
     font-family: var(--font-family-2);
 }
+/* Custom Scroll Bar */
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: transparent;
+}
 body{
     color: var(--text-color);
 }
