@@ -47,6 +47,11 @@ header{
     width: 100%;
     z-index: 100;
 }
+header.shadow{
+    background: var(--bg-color);
+    box-shadow: 0 1px 4px hsl(0deg 4% 15% / 10%);
+    transition: 0.4s;
+}
 .nav{
     display: flex;
     justify-content: space-between;
@@ -423,4 +428,108 @@ header{
     font-size: 20px !important;
     font-weight: 800;
     color: #ffffff !important;
+}
+.testimonial .heading{
+    margin-bottom: 1rem;
+}
+.testimonial h3{
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.testimonial-data{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.t-img{
+    width: 100%;
+    height: 280px;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+.t-img img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.t-img .bx{
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: -1.2rem;
+    right: 1rem;
+    padding: 15px;
+    color: var(--bg-color);
+    background: #d1a670;
+}
+.t-box h2{
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+.t-box p{
+    font-size: 1.02rem;
+}
+/* Footer */
+.footer{
+    background: var(--text-alter-color);
+    color: #f6f6f6;
+    border-top: 2px solid #d1a670;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+.footer-container .logo{
+    color: var(--bg-color);
+    margin-bottom: 1rem;
+}
+.footer-container .logo:hover{
+    color: var(--bg-color);
+}
+.footer-container .footer-box{
+    display: flex;
+    flex-direction: column;
+}
+.social{
+    display: flex;
+    align-items: center;
+}
+.social a{
+    font-size: 24px;
+    color: var(--bg-color);
+    margin-right: 1rem;
+}
+.social a:hover{
+    color: #d1a670;
+}
+.footer-box h3{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.footer-box a,
+.footer-box p{
+    color: #818181;
+    margin-bottom: 10px;
+}
+.footer-box a:hover{
+    color: #d1a670;
+}
+.copyright{
+    padding: 20px;
+    text-align: center;
+    background: var(--text-alter-color);
+}
+.copyright a{
+    font-weight: bold;
+    color: whitesmoke;
+}
+.copyright a:hover{
+    color: #d1a670;
 }
