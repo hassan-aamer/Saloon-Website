@@ -1,0 +1,226 @@
+/* Variables */
+:root{
+    --main-color: #edd4c6;
+    --text-color: #121212;
+    --container-color: #fdf5f0;
+    --bg-color: #fff;
+    --text-alter-color: #27282b;
+    --poppins-font: 'Poppins', sans-serif;
+    --font-family-1: 'Raleway', sans-serif;
+    --font-family-2: 'Roboto Slab', serif;
+}
+@media (max-width:985px){
+    .container{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .home{
+        min-height: 600px;
+        padding-top: 7rem;
+    }
+    .home-bg{
+        width: 420px;
+        height: 420px;
+        bottom: -150px;
+    }
+}
+@media (max-width:875px){
+    .nav{
+        padding: 15px 0;
+    }
+    .home-bg{
+        width: 350px;
+        height: 350px;
+        bottom: -154px;
+        transform: translateX(38px);
+    }
+    .service-box{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .testimonial-data{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width:864px){
+    .home-bg{
+        position: unset;
+        transform: translateX(0);
+    }
+    .home-bg::after{
+        top: -1rem;
+        left: -1rem;
+    }
+}
+@media (max-width:800px){
+    .nav{
+        padding: 14px 0;
+    }
+    .home-img{
+        display: inline;
+    }
+    .home-bg{
+        display: none;
+    }
+    .home-data{
+        grid-template-columns: 1fr;
+    }
+    .home-img{
+        position: relative;
+        width: 350px;
+        height: 350px;
+        z-index: 2;
+        margin-top: 1.5rem;
+    }
+    .home-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .home-img::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: -1rem;
+        left: -1rem;
+        border: 1px solid var(--main-color);
+        background: transparent;
+        z-index: -1;
+    }
+    .home-text h3{
+        font-size: 1rem;
+    }
+    .home-text h2{
+        font-size: 2.4rem;
+    }
+    .menu-icon{
+        display: flex;
+    }
+    .navbar{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 300px;
+        min-height: 100vh;
+        background: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
+        clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%);
+        transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .open-menu{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+        transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .nav-link{
+        display: block;
+        margin: 1rem 0;
+    }
+    .register-btn{
+        margin: 1.5rem 0 0 0;
+    }
+    .heading,
+    .services .heading,
+    .testimonial .heading{
+        font-size: 1.rem;
+    }
+    .about-text{
+        margin-top: 0 !important;
+    }
+    .ser-img{
+        width: 344px;
+        height: 395px;
+    }
+    .heading::after{
+        width: 35px;
+        height: 35px;
+    }
+    .about-text h1,
+    .box-data h2{
+        font-size: 1.5rem;
+    }
+    .t-box h2{
+        font-size: 1.2rem;
+    }
+    .about-text p,
+    .box-data p{
+        font-size: 1.02rem;
+    }
+}
+@media (max-width:680px){
+    .home{
+        padding-top: 5rem;
+    }
+    .about-data{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width:445px){
+    .about-data{
+        grid-template-columns: repeat(1, 260px);
+        justify-content: center;
+    }
+    .ser-img{
+        width: 100%;
+        height: 370px;
+    }
+    .testimonial-data,
+    .footer-container{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width:385px){
+    .home-img{
+        width: 100%;
+        transform: translateX(16px);
+    }
+    .ser-img{
+        width: 90%;
+    }
+    .home-text{
+        font-size: 0.9rem;
+    }
+    .home-text h2{
+        font-size: 2rem;
+    }
+    .about-text h1,
+    .box-data h2,
+    .testimonial h3{
+        font-size: 1.3rem;
+    }
+}
+@media(max-width:315px){
+    .navbar{
+        width: 100%;
+    }
+    .home-btns{
+        display: grid;
+        align-items: center;
+        margin-top: 1.5rem;
+        text-align: center;
+        row-gap: 1rem;
+    }
+    .about-data{
+        grid-template-columns: 1fr;
+    }
+    .about-box{
+        width: 95%;
+    }
+    .ser-img{
+        height: 310px;
+    }
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+    }
+}
